@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OrderPizza</title>
+        <meta charset="utf-8">
+        <style></style>
+    </head>
+    <body style="text-align: center; justify-content: center; align-items: center; ">
+        <h1>Order Pizza!</h1>
+        <form action="https://www.kliknijadi.mk/mk/restaurant/PIZZA-JACOMO-KARPOS">
+                <p><strong>Select the pizza size:</strong></p>
+                <ul style="list-style: none; padding: 0; text-align: center;">
+                    <li>
+                        <input type="radio" name="pizza1" id="Big" checked>    
+                        <label for="Big">Big</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="pizza1" id="Medium">
+                        <label for="Medium">Medium</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="pizza1" id="Small">
+                        <label for="Small">Small</label>
+                    </li>
+                </ul>  
+                <p><strong>Select the crust type: </strong></p>
+                <select>
+                    <option>Delight of Neapolitan Pizza Crust</option>
+                    <option>New York Style Pizza Crust</option>
+                    <option>Chicago Deep Dish Pizza Crust</option>
+                    <option>Sicilian Crust Rectangular Crust with Light</option>
+                    <option>Crispy Texture Lightness of Thin Crust Pizza</option>
+                    <option>Stuffed Crust Pizzas</option>
+                    <option>Gluten-Free Pizza Crust</option>
+                    <option>Whole Wheat or Multigrain Pizza Crust</option>
+                    <option>Cauliflower Pizza Crust</option>
+                    <option>Flatbread Pizza Crust</option>
+                </select>
+                <p><strong>Select the filler:</strong></p>  
+                <ul style="list-style: none; padding: 0; text-align: center;">
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Sasage" checked>
+                        <label for="Sasage">Sausages</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Peppers">
+                        <label for="Peppers">Peppers</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Cheese">
+                        <label for="Cheese">Cheese</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Ham">
+                        <label for="Ham">Ham</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Mushrooms">
+                        <label for="Mushrooms">Mushrooms</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pizza3" id="Ketchup" checked>
+                        <label for="Ketchup">Ketchup</label>
+                    </li>
+                </ul>
+                <p>
+                    <label><strong>Name: </strong><input type="text" required></label>
+                <br>
+                    <label><strong>Phone: </strong> <input type="tel" required></label>
+                <br>
+                    <label><textarea name="message" id="msg" rows="3" cols="40" placeholder="Message: "></textarea></label>
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="s" value="Order">
+                    <input type="reset" name="reset" id="r" value="Reset">
+                </p>
+        </form>
+    </body>
+</html>
