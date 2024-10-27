@@ -7,12 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-ol {
-    list-style: none; 
-    padding: 0; 
-    text-align: center;
-}
-ul {
+ol, ul {
     list-style: none; 
     padding: 0; 
     text-align: center;
