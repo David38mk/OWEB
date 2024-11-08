@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HANGMAN</title>
+        <link rel="stylesheet" href="Dom3.css" type="text/css">
+        <script src="Dom3.js"></script>
+    </head>
+    <body>
+        <h1>HANGMAN</h1> 
+        <div id="hangman">
+            <h2>Guess the word!</h2>
+            <div id="hint"></div>
+            <div id="word"></div>
+            <input type="text" id="guess" maxlength="5" placeholder="Guess a maximum 5 letter word" class="in">
+            <button onclick="ProveriZbor()" class="in">CHECK</button>
+            <p>Attempts left: <span id="attemps">0</span>/5</p>
+            <button onclick="start()" id="new_game" class="in">NEW GAME</button>
+        </div>
+    </body>
+</html>
