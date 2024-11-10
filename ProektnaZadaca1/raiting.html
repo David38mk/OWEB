@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Suzuki-Rating</title>
+        <link rel="stylesheet" href="pz.css">
+        <script src="pz.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="home.html"><img src="SuzukiLogo.png" alt="image not found" class="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="models.html" class="headnav">Модели</a>
+                    <a href="usedmodels.html" class="headnav">Користени модели</a>
+                    <a href="About.html" class="headnav">За нас</a>
+                    <a href="contact.html" class="headnav">Контакт</a>
+                    <a href="raiting.html" class="headnav">Рејтинг</a>
+                </ul>
+            </nav>
+        </header>
+        <section id="survey" class="survey">
+            <h2>Анкета за посетителите</h2>
+            <form>
+              <label for="impression">Како ви се допадна сајтот?</label>
+              <textarea id="impression" name="impression" required placeholder="Многу ми се допаѓа што ги има сите информации за..."></textarea>
+        
+              <label>Дајте му рејтинг на вашето искуство со сајтот:</label>
+              <label for="excellent">Одлично</label>
+              <input type="radio" id="excellent" name="impression-rating" value="excellent" checked>
+              
+              <label for="good">Добро</label>
+              <input type="radio" id="good" name="impression-rating" value="good">
+              
+              <label for="average">Средно</label>
+              <input type="radio" id="average" name="impression-rating" value="average">
+              
+              <label for="average">Онака</label>
+              <input type="radio" id="soso" name="impression-rating" value="average">
+              
+              <label for="average">Никакво</label>
+              <input type="radio" id="awful" name="impression-rating" value="average">
+              
+              <button type="submit" onclick="rating()">Испрати</button>
+            </form>
+        </section>
+        <footer>
+            <p class="footerp">© SuzukiМК. Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>
