@@ -8,21 +8,17 @@ function loadContent(elementId, url) {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
             }
-            return response.text();  // We fetch the HTML content
+            return response.text();  
         })
         .then(html => {
-            // Now we need to extract the text content from the HTML
+            // Parse the HTML
             let parser = new DOMParser();
             let doc = parser.parseFromString(html, 'text/html');
             
-            // Example: Extract the main content (adjust based on the website structure)
-            let content = doc.querySelector('.ChapterElement_classBodyText__d_L_J CopyText_copy__text__m7Eua').innerText;  // Adjust selector as needed
+            // Extract only the text of the first paragraph
+            let paragraphText = doc.querySelector('p')?.innerText || 'No paragraph found.';
             
-            // You can also target a specific element by its ID or class
-            // let content = doc.querySelector('.main-content').innerText;
-
-            // Insert the extracted content into the designated HTML element
-            document.getElementById(elementId).innerHTML = content;
+            document.getElementById(elementId).innerHTML = paragraphText;
         })
         .catch(error => {
             console.error('Error fetching content:', error);
