@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vezba1</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                function filterList(){
+                    var name = $('#inp1').val().toLowerCase();
+                    $("#lista li").each(function() {
+                        var fname = $(this).text().toLowerCase();
+
+                        var match = fname.indexOf(name) > -1;
+
+                        $(this).toggle(match);
+                    });
+                    
+                }
+
+                $("#inp1").on("keyup", filterList);
+
+                function onHover() {
+                    $('#lista li').on('mouseover', function () {
+                        $(this).css('background-color', 'green'); 
+                    }).on('mouseout', function () {
+                        $(this).css('background-color', ''); 
+                    });
+                }
+
+                onHover();
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="inp1" placeholder="Filtritraj tekst tuka">
+        <ul id="lista">
+            <li>David</li>
+            <li>Mihaljo</li>
+            <li>Viki</li>
+            <li>Tomi</li>
+            <li>Sara</li>
+            <li>Martina</li>
+            <li>Mime</li>
+            <li>Sara (Tomi)</li>
+        </ul>
+    </body>
+</html>
