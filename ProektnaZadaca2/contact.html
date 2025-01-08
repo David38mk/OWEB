@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Suzuki-Contact</title>
+        <link rel="stylesheet" href="pz.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="pz.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="home.html"><img src="SuzukiLogo.png" alt="image not found" class="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="models.html" class="headnav">Модели</a>
+                    <a href="usedmodels.html" class="headnav">Користени модели</a>
+                    <a href="About.html" class="headnav">За нас</a>
+                    <a href="contact.html" class="headnav">Контакт</a>
+                    <a href="raiting.html" class="headnav">Рејтинг</a>
+                </ul>
+            </nav>
+        </header>
+        <section id="test-drive-booking">
+            <h2>Резервирајте тест возење</h2>
+            <p>Пополнете го формуларот за да резервирате тест возење за вашиот омилен модел на Suzuki.</p>
+            <form class="test-drive-form">
+              <label for="name">Вашето име:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Вашиот email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="phone">Ваш број на телефон:</label>
+              <input type="tel" id="phone" name="phone" required>
+          
+              <label for="model">Изберете модел:</label>
+              <select id="model" name="model" required>
+                <option value="Swift 2024">Suzuki Swift (2024)</option>
+                <option value="Vitara 2024">Suzuki Vitara (2024)</option>
+                <option value="S-cross 2024">Suzuki S-cross (2024)</option>
+                <option value="Jimny 2024">Suzuki Jimny (2024)</option>
+                <option value="Boulevard c50 2024">Suzuki Boulevard c50 (2024)</option>
+                <option value="Hayabusa 2024">Suzuki Hayabusa (2024)</option>
+                <option value="Alto">Suzuki Alto</option>
+                <option value="Swift">Suzuki Swift</option>
+                <option value="Vitara">Suzuki Vitara</option>
+                <option value="SX4">Suzuki SX4</option>
+                <option value="Grand Vitara">Suzuki Jimny</option>
+                <option value="Jimny">Suzuki Jimny</option>
+            </select>
+          
+              <label for="date">Изберете датум за тест возење:</label>
+              <input type="date" id="date" name="date" required>
+          
+              <button type="submit" onclick="contactform()">Резервирајте тест возење</button>
+            </form>
+          </section>
+        <footer>
+            <p class="footerp">© SuzukiМК. Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>
